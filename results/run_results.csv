@@ -1,0 +1,649 @@
+﻿case_id,approach,risk_type,issue,recommended_action,urgency,missing_information,requires_human_review,triggered_rules,valid_json,latency_seconds,input_tokens,output_tokens,cost_usd,conflict,raw
+F001,rule_only,within_threshold,No deterministic threshold was triggered.,MONITOR,low,[],False,[],True,0.0,0,0,0.0,,
+F001,model_with_rule_context,within_threshold,No deterministic threshold was triggered.,MONITOR,low,[],False,[],True,3.791926805999992,438,45,9.27e-05,False,"{
+  ""risk_type"": ""within_threshold"",
+  ""issue"": ""No deterministic threshold was triggered."",
+  ""recommended_action"": ""MONITOR"",
+  ""urgency"": ""low"",
+  ""missing_information"": []
+}"
+F001,hybrid,within_threshold,No deterministic threshold was triggered.,MONITOR,low,[],False,[],True,3.791926805999992,438,45,9.27e-05,False,"{
+  ""risk_type"": ""within_threshold"",
+  ""issue"": ""No deterministic threshold was triggered."",
+  ""recommended_action"": ""MONITOR"",
+  ""urgency"": ""low"",
+  ""missing_information"": []
+}"
+F002,rule_only,interest_rate,Observed yield is below the pricing interest rate.,RUN_SENSITIVITY_TEST,high,[],True,['R_INTEREST_SPREAD'],True,0.0,0,0,0.0,,
+F002,model_with_rule_context,interest_rate,Observed yield is below the pricing interest rate.,RUN_SENSITIVITY_TEST,high,[],True,[],True,0.8950267120000035,448,52,9.84e-05,False,"{
+  ""risk_type"": ""interest_rate"",
+  ""issue"": ""Observed yield is below the pricing interest rate."",
+  ""recommended_action"": ""RUN_SENSITIVITY_TEST"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F002,hybrid,interest_rate,Observed yield is below the pricing interest rate. Model assessment: Observed yield is below the pricing interest rate.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,['R_INTEREST_SPREAD'],True,0.8950267120000035,448,52,9.84e-05,False,"{
+  ""risk_type"": ""interest_rate"",
+  ""issue"": ""Observed yield is below the pricing interest rate."",
+  ""recommended_action"": ""RUN_SENSITIVITY_TEST"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F003,rule_only,interest_rate,Observed yield is below the break-even return.,RUN_SENSITIVITY_TEST,high,[],True,['R_BREAK_EVEN'],True,0.0,0,0,0.0,,
+F003,model_with_rule_context,interest_rate,Observed yield is below the break-even return.,RUN_SENSITIVITY_TEST,high,[],True,[],True,0.9306225189999964,450,52,9.87e-05,False,"{
+  ""risk_type"": ""interest_rate"",
+  ""issue"": ""Observed yield is below the break-even return."",
+  ""recommended_action"": ""RUN_SENSITIVITY_TEST"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F003,hybrid,interest_rate,Observed yield is below the break-even return. Model assessment: Observed yield is below the break-even return.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,['R_BREAK_EVEN'],True,0.9306225189999964,450,52,9.87e-05,False,"{
+  ""risk_type"": ""interest_rate"",
+  ""issue"": ""Observed yield is below the break-even return."",
+  ""recommended_action"": ""RUN_SENSITIVITY_TEST"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F004,rule_only,mortality,Observed mortality is 1.05 times the pricing index.,REVIEW_MORTALITY_ASSUMPTIONS,medium,[],False,['R_MORTALITY_MEDIUM'],True,0.0,0,0,0.0,,
+F004,model_with_rule_context,mortality,Observed mortality is 1.05 times the pricing index.,REVIEW_MORTALITY_ASSUMPTIONS,medium,[],False,[],True,2.723008467,456,59,0.0001038,False,"{
+  ""risk_type"": ""mortality"",
+  ""issue"": ""Observed mortality is 1.05 times the pricing index."",
+  ""recommended_action"": ""REVIEW_MORTALITY_ASSUMPTIONS"",
+  ""urgency"": ""medium"",
+  ""missing_information"": []
+}"
+F004,hybrid,mortality,Observed mortality is 1.05 times the pricing index.,REVIEW_MORTALITY_ASSUMPTIONS,medium,[],False,['R_MORTALITY_MEDIUM'],True,2.723008467,456,59,0.0001038,False,"{
+  ""risk_type"": ""mortality"",
+  ""issue"": ""Observed mortality is 1.05 times the pricing index."",
+  ""recommended_action"": ""REVIEW_MORTALITY_ASSUMPTIONS"",
+  ""urgency"": ""medium"",
+  ""missing_information"": []
+}"
+F005,rule_only,mortality,Observed mortality is 1.12 times the pricing index.,REVIEW_MORTALITY_ASSUMPTIONS,high,[],True,['R_MORTALITY_HIGH'],True,0.0,0,0,0.0,,
+F005,model_with_rule_context,mortality,Observed mortality is 1.12 times the pricing index.,REVIEW_MORTALITY_ASSUMPTIONS,high,[],True,[],True,0.987593311000012,455,59,0.00010365,False,"{
+  ""risk_type"": ""mortality"",
+  ""issue"": ""Observed mortality is 1.12 times the pricing index."",
+  ""recommended_action"": ""REVIEW_MORTALITY_ASSUMPTIONS"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F005,hybrid,mortality,Observed mortality is 1.12 times the pricing index. Model assessment: Observed mortality is 1.12 times the pricing index.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,['R_MORTALITY_HIGH'],True,0.987593311000012,455,59,0.00010365,False,"{
+  ""risk_type"": ""mortality"",
+  ""issue"": ""Observed mortality is 1.12 times the pricing index."",
+  ""recommended_action"": ""REVIEW_MORTALITY_ASSUMPTIONS"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F006,rule_only,lapse,Observed lapse is 1.15 times the pricing rate.,REVIEW_LAPSE_ASSUMPTIONS,medium,[],False,['R_LAPSE_MEDIUM'],True,0.0,0,0,0.0,,
+F006,model_with_rule_context,lapse,Observed lapse is 1.15 times the pricing rate.,REVIEW_LAPSE_ASSUMPTIONS,medium,[],False,[],True,2.2973955059999867,455,58,0.0001030499999999,False,"{
+  ""risk_type"": ""lapse"",
+  ""issue"": ""Observed lapse is 1.15 times the pricing rate."",
+  ""recommended_action"": ""REVIEW_LAPSE_ASSUMPTIONS"",
+  ""urgency"": ""medium"",
+  ""missing_information"": []
+}"
+F006,hybrid,lapse,Observed lapse is 1.15 times the pricing rate.,REVIEW_LAPSE_ASSUMPTIONS,medium,[],False,['R_LAPSE_MEDIUM'],True,2.2973955059999867,455,58,0.0001030499999999,False,"{
+  ""risk_type"": ""lapse"",
+  ""issue"": ""Observed lapse is 1.15 times the pricing rate."",
+  ""recommended_action"": ""REVIEW_LAPSE_ASSUMPTIONS"",
+  ""urgency"": ""medium"",
+  ""missing_information"": []
+}"
+F007,rule_only,lapse,Observed lapse is 1.55 times the pricing rate.,REVIEW_LAPSE_ASSUMPTIONS,high,[],True,['R_LAPSE_HIGH'],True,0.0,0,0,0.0,,
+F007,model_with_rule_context,lapse,Observed lapse is 1.55 times the pricing rate.,REVIEW_LAPSE_ASSUMPTIONS,high,[],True,[],True,0.9465643610000144,456,58,0.0001031999999999,False,"{
+  ""risk_type"": ""lapse"",
+  ""issue"": ""Observed lapse is 1.55 times the pricing rate."",
+  ""recommended_action"": ""REVIEW_LAPSE_ASSUMPTIONS"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F007,hybrid,lapse,Observed lapse is 1.55 times the pricing rate. Model assessment: Observed lapse is 1.55 times the pricing rate.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,['R_LAPSE_HIGH'],True,0.9465643610000144,456,58,0.0001031999999999,False,"{
+  ""risk_type"": ""lapse"",
+  ""issue"": ""Observed lapse is 1.55 times the pricing rate."",
+  ""recommended_action"": ""REVIEW_LAPSE_ASSUMPTIONS"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F008,rule_only,profitability,Profit-test NPV is negative.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,['R_NEGATIVE_NPV'],True,0.0,0,0,0.0,,
+F008,model_with_rule_context,profitability,Profit-test NPV is negative.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,[],True,1.8594485430000416,453,54,0.00010035,False,"{
+  ""risk_type"": ""profitability"",
+  ""issue"": ""Profit-test NPV is negative."",
+  ""recommended_action"": ""ESCALATE_TO_ACTUARIAL_REVIEW"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F008,hybrid,profitability,Profit-test NPV is negative. Model assessment: Profit-test NPV is negative.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,['R_NEGATIVE_NPV'],True,1.8594485430000416,453,54,0.00010035,False,"{
+  ""risk_type"": ""profitability"",
+  ""issue"": ""Profit-test NPV is negative."",
+  ""recommended_action"": ""ESCALATE_TO_ACTUARIAL_REVIEW"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F009,rule_only,within_threshold,No deterministic threshold was triggered.,MONITOR,low,[],False,[],True,0.0,0,0,0.0,,
+F009,model_with_rule_context,within_threshold,No deterministic threshold was triggered.,MONITOR,low,[],False,[],True,0.8939581340000018,434,45,9.21e-05,False,"{
+  ""risk_type"": ""within_threshold"",
+  ""issue"": ""No deterministic threshold was triggered."",
+  ""recommended_action"": ""MONITOR"",
+  ""urgency"": ""low"",
+  ""missing_information"": []
+}"
+F009,hybrid,within_threshold,No deterministic threshold was triggered.,MONITOR,low,[],False,[],True,0.8939581340000018,434,45,9.21e-05,False,"{
+  ""risk_type"": ""within_threshold"",
+  ""issue"": ""No deterministic threshold was triggered."",
+  ""recommended_action"": ""MONITOR"",
+  ""urgency"": ""low"",
+  ""missing_information"": []
+}"
+F010,rule_only,interest_rate,Observed yield is below the pricing interest rate.,RUN_SENSITIVITY_TEST,high,[],True,['R_INTEREST_SPREAD'],True,0.0,0,0,0.0,,
+F010,model_with_rule_context,interest_rate,Observed yield is below the pricing interest rate.,RUN_SENSITIVITY_TEST,high,[],True,[],True,0.9692093269999872,448,52,9.84e-05,False,"{
+  ""risk_type"": ""interest_rate"",
+  ""issue"": ""Observed yield is below the pricing interest rate."",
+  ""recommended_action"": ""RUN_SENSITIVITY_TEST"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F010,hybrid,interest_rate,Observed yield is below the pricing interest rate. Model assessment: Observed yield is below the pricing interest rate.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,['R_INTEREST_SPREAD'],True,0.9692093269999872,448,52,9.84e-05,False,"{
+  ""risk_type"": ""interest_rate"",
+  ""issue"": ""Observed yield is below the pricing interest rate."",
+  ""recommended_action"": ""RUN_SENSITIVITY_TEST"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F011,rule_only,mortality,Observed mortality is 1.06 times the pricing index.,REVIEW_MORTALITY_ASSUMPTIONS,medium,[],False,['R_MORTALITY_MEDIUM'],True,0.0,0,0,0.0,,
+F011,model_with_rule_context,mortality,Observed mortality is 1.06 times the pricing index.,REVIEW_MORTALITY_ASSUMPTIONS,medium,[],False,[],True,1.0126537859999871,460,59,0.0001043999999999,False,"{
+  ""risk_type"": ""mortality"",
+  ""issue"": ""Observed mortality is 1.06 times the pricing index."",
+  ""recommended_action"": ""REVIEW_MORTALITY_ASSUMPTIONS"",
+  ""urgency"": ""medium"",
+  ""missing_information"": []
+}"
+F011,hybrid,mortality,Observed mortality is 1.06 times the pricing index.,REVIEW_MORTALITY_ASSUMPTIONS,medium,[],False,['R_MORTALITY_MEDIUM'],True,1.0126537859999871,460,59,0.0001043999999999,False,"{
+  ""risk_type"": ""mortality"",
+  ""issue"": ""Observed mortality is 1.06 times the pricing index."",
+  ""recommended_action"": ""REVIEW_MORTALITY_ASSUMPTIONS"",
+  ""urgency"": ""medium"",
+  ""missing_information"": []
+}"
+F012,rule_only,lapse,Observed lapse is 1.14 times the pricing rate.,REVIEW_LAPSE_ASSUMPTIONS,medium,[],False,['R_LAPSE_MEDIUM'],True,0.0,0,0,0.0,,
+F012,model_with_rule_context,lapse,Observed lapse is 1.14 times the pricing rate.,REVIEW_LAPSE_ASSUMPTIONS,medium,[],False,[],True,1.2913527790000217,457,58,0.0001033499999999,False,"{
+  ""risk_type"": ""lapse"",
+  ""issue"": ""Observed lapse is 1.14 times the pricing rate."",
+  ""recommended_action"": ""REVIEW_LAPSE_ASSUMPTIONS"",
+  ""urgency"": ""medium"",
+  ""missing_information"": []
+}"
+F012,hybrid,lapse,Observed lapse is 1.14 times the pricing rate.,REVIEW_LAPSE_ASSUMPTIONS,medium,[],False,['R_LAPSE_MEDIUM'],True,1.2913527790000217,457,58,0.0001033499999999,False,"{
+  ""risk_type"": ""lapse"",
+  ""issue"": ""Observed lapse is 1.14 times the pricing rate."",
+  ""recommended_action"": ""REVIEW_LAPSE_ASSUMPTIONS"",
+  ""urgency"": ""medium"",
+  ""missing_information"": []
+}"
+F013,rule_only,lapse,Observed lapse is 1.60 times the pricing rate.,REVIEW_LAPSE_ASSUMPTIONS,high,[],True,['R_LAPSE_HIGH'],True,0.0,0,0,0.0,,
+F013,model_with_rule_context,lapse,Observed lapse is 1.60 times the pricing rate.,REVIEW_LAPSE_ASSUMPTIONS,high,[],True,[],True,1.888271438000004,453,58,0.00010275,False,"{
+  ""risk_type"": ""lapse"",
+  ""issue"": ""Observed lapse is 1.60 times the pricing rate."",
+  ""recommended_action"": ""REVIEW_LAPSE_ASSUMPTIONS"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F013,hybrid,lapse,Observed lapse is 1.60 times the pricing rate. Model assessment: Observed lapse is 1.60 times the pricing rate.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,['R_LAPSE_HIGH'],True,1.888271438000004,453,58,0.00010275,False,"{
+  ""risk_type"": ""lapse"",
+  ""issue"": ""Observed lapse is 1.60 times the pricing rate."",
+  ""recommended_action"": ""REVIEW_LAPSE_ASSUMPTIONS"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F014,rule_only,mortality,Observed mortality is 1.18 times the pricing index.,REVIEW_MORTALITY_ASSUMPTIONS,high,[],True,['R_MORTALITY_HIGH'],True,0.0,0,0,0.0,,
+F014,model_with_rule_context,mortality,Observed mortality is 1.18 times the pricing index.,REVIEW_MORTALITY_ASSUMPTIONS,high,[],True,[],True,0.9042644900000028,457,59,0.00010395,False,"{
+  ""risk_type"": ""mortality"",
+  ""issue"": ""Observed mortality is 1.18 times the pricing index."",
+  ""recommended_action"": ""REVIEW_MORTALITY_ASSUMPTIONS"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F014,hybrid,mortality,Observed mortality is 1.18 times the pricing index. Model assessment: Observed mortality is 1.18 times the pricing index.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,['R_MORTALITY_HIGH'],True,0.9042644900000028,457,59,0.00010395,False,"{
+  ""risk_type"": ""mortality"",
+  ""issue"": ""Observed mortality is 1.18 times the pricing index."",
+  ""recommended_action"": ""REVIEW_MORTALITY_ASSUMPTIONS"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F015,rule_only,within_threshold,No deterministic threshold was triggered.,MONITOR,low,[],False,[],True,0.0,0,0,0.0,,
+F015,model_with_rule_context,within_threshold,No deterministic threshold was triggered.,MONITOR,low,[],False,[],True,2.053176621000034,431,45,9.165e-05,False,"{
+  ""risk_type"": ""within_threshold"",
+  ""issue"": ""No deterministic threshold was triggered."",
+  ""recommended_action"": ""MONITOR"",
+  ""urgency"": ""low"",
+  ""missing_information"": []
+}"
+F015,hybrid,within_threshold,No deterministic threshold was triggered.,MONITOR,low,[],False,[],True,2.053176621000034,431,45,9.165e-05,False,"{
+  ""risk_type"": ""within_threshold"",
+  ""issue"": ""No deterministic threshold was triggered."",
+  ""recommended_action"": ""MONITOR"",
+  ""urgency"": ""low"",
+  ""missing_information"": []
+}"
+F016,rule_only,interest_rate,Observed yield is below the break-even return.,RUN_SENSITIVITY_TEST,high,[],True,['R_BREAK_EVEN'],True,0.0,0,0,0.0,,
+F016,model_with_rule_context,interest_rate,Observed yield is below the break-even return.,RUN_SENSITIVITY_TEST,high,[],True,[],True,2.711855593999985,446,52,9.81e-05,False,"{
+  ""risk_type"": ""interest_rate"",
+  ""issue"": ""Observed yield is below the break-even return."",
+  ""recommended_action"": ""RUN_SENSITIVITY_TEST"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F016,hybrid,interest_rate,Observed yield is below the break-even return. Model assessment: Observed yield is below the break-even return.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,['R_BREAK_EVEN'],True,2.711855593999985,446,52,9.81e-05,False,"{
+  ""risk_type"": ""interest_rate"",
+  ""issue"": ""Observed yield is below the break-even return."",
+  ""recommended_action"": ""RUN_SENSITIVITY_TEST"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F017,rule_only,profitability,Profit-test NPV is negative.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,['R_NEGATIVE_NPV'],True,0.0,0,0,0.0,,
+F017,model_with_rule_context,profitability,Profit-test NPV is negative.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,[],True,0.8634057919999805,454,54,0.0001004999999999,False,"{
+  ""risk_type"": ""profitability"",
+  ""issue"": ""Profit-test NPV is negative."",
+  ""recommended_action"": ""ESCALATE_TO_ACTUARIAL_REVIEW"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F017,hybrid,profitability,Profit-test NPV is negative. Model assessment: Profit-test NPV is negative.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,['R_NEGATIVE_NPV'],True,0.8634057919999805,454,54,0.0001004999999999,False,"{
+  ""risk_type"": ""profitability"",
+  ""issue"": ""Profit-test NPV is negative."",
+  ""recommended_action"": ""ESCALATE_TO_ACTUARIAL_REVIEW"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F018,rule_only,mortality,Observed mortality is 1.09 times the pricing index.,REVIEW_MORTALITY_ASSUMPTIONS,medium,[],False,['R_MORTALITY_MEDIUM'],True,0.0,0,0,0.0,,
+F018,model_with_rule_context,mortality,Observed mortality is 1.09 times the pricing index.,REVIEW_MORTALITY_ASSUMPTIONS,medium,[],False,[],True,1.2203985599999785,457,59,0.00010395,False,"{
+  ""risk_type"": ""mortality"",
+  ""issue"": ""Observed mortality is 1.09 times the pricing index."",
+  ""recommended_action"": ""REVIEW_MORTALITY_ASSUMPTIONS"",
+  ""urgency"": ""medium"",
+  ""missing_information"": []
+}"
+F018,hybrid,mortality,Observed mortality is 1.09 times the pricing index.,REVIEW_MORTALITY_ASSUMPTIONS,medium,[],False,['R_MORTALITY_MEDIUM'],True,1.2203985599999785,457,59,0.00010395,False,"{
+  ""risk_type"": ""mortality"",
+  ""issue"": ""Observed mortality is 1.09 times the pricing index."",
+  ""recommended_action"": ""REVIEW_MORTALITY_ASSUMPTIONS"",
+  ""urgency"": ""medium"",
+  ""missing_information"": []
+}"
+F019,rule_only,lapse,Observed lapse is 1.49 times the pricing rate.,REVIEW_LAPSE_ASSUMPTIONS,medium,[],False,['R_LAPSE_MEDIUM'],True,0.0,0,0,0.0,,
+F019,model_with_rule_context,lapse,Observed lapse is 1.49 times the pricing rate.,REVIEW_LAPSE_ASSUMPTIONS,medium,[],False,[],True,2.3327241950000257,460,58,0.0001038,False,"{
+  ""risk_type"": ""lapse"",
+  ""issue"": ""Observed lapse is 1.49 times the pricing rate."",
+  ""recommended_action"": ""REVIEW_LAPSE_ASSUMPTIONS"",
+  ""urgency"": ""medium"",
+  ""missing_information"": []
+}"
+F019,hybrid,lapse,Observed lapse is 1.49 times the pricing rate.,REVIEW_LAPSE_ASSUMPTIONS,medium,[],False,['R_LAPSE_MEDIUM'],True,2.3327241950000257,460,58,0.0001038,False,"{
+  ""risk_type"": ""lapse"",
+  ""issue"": ""Observed lapse is 1.49 times the pricing rate."",
+  ""recommended_action"": ""REVIEW_LAPSE_ASSUMPTIONS"",
+  ""urgency"": ""medium"",
+  ""missing_information"": []
+}"
+F020,rule_only,within_threshold,No deterministic threshold was triggered.,MONITOR,low,[],False,[],True,0.0,0,0,0.0,,
+F020,model_with_rule_context,within_threshold,No deterministic threshold was triggered.,MONITOR,low,[],False,[],True,0.8012284710000017,434,45,9.21e-05,False,"{
+  ""risk_type"": ""within_threshold"",
+  ""issue"": ""No deterministic threshold was triggered."",
+  ""recommended_action"": ""MONITOR"",
+  ""urgency"": ""low"",
+  ""missing_information"": []
+}"
+F020,hybrid,within_threshold,No deterministic threshold was triggered.,MONITOR,low,[],False,[],True,0.8012284710000017,434,45,9.21e-05,False,"{
+  ""risk_type"": ""within_threshold"",
+  ""issue"": ""No deterministic threshold was triggered."",
+  ""recommended_action"": ""MONITOR"",
+  ""urgency"": ""low"",
+  ""missing_information"": []
+}"
+F021,rule_only,uncertain,No deterministic threshold was triggered.,REQUEST_ADDITIONAL_EVIDENCE,low,"['observed_investment_yield_pct', 'break_even_return_pct']",True,[],True,0.0,0,0,0.0,,
+F021,model_with_rule_context,uncertain,No deterministic threshold was triggered.,REQUEST_ADDITIONAL_EVIDENCE,low,"['observed_investment_yield_pct', 'break_even_return_pct']",True,[],True,1.0682108440000206,450,70,0.0001095,False,"{
+  ""risk_type"": ""uncertain"",
+  ""issue"": ""No deterministic threshold was triggered."",
+  ""recommended_action"": ""REQUEST_ADDITIONAL_EVIDENCE"",
+  ""urgency"": ""low"",
+  ""missing_information"": [
+    ""observed_investment_yield_pct"",
+    ""break_even_return_pct""
+  ]
+}"
+F021,hybrid,uncertain,No deterministic threshold was triggered.,REQUEST_ADDITIONAL_EVIDENCE,low,"['break_even_return_pct', 'observed_investment_yield_pct']",True,[],True,1.0682108440000206,450,70,0.0001095,False,"{
+  ""risk_type"": ""uncertain"",
+  ""issue"": ""No deterministic threshold was triggered."",
+  ""recommended_action"": ""REQUEST_ADDITIONAL_EVIDENCE"",
+  ""urgency"": ""low"",
+  ""missing_information"": [
+    ""observed_investment_yield_pct"",
+    ""break_even_return_pct""
+  ]
+}"
+F022,rule_only,uncertain,No deterministic threshold was triggered.,REQUEST_ADDITIONAL_EVIDENCE,low,"['pricing_mortality_index', 'observed_mortality_index']",True,[],True,0.0,0,0,0.0,,
+F022,model_with_rule_context,uncertain,No deterministic threshold was triggered.,REQUEST_ADDITIONAL_EVIDENCE,low,"['pricing_mortality_index', 'observed_mortality_index']",True,[],True,2.027395227999989,450,69,0.0001088999999999,False,"{
+  ""risk_type"": ""uncertain"",
+  ""issue"": ""No deterministic threshold was triggered."",
+  ""recommended_action"": ""REQUEST_ADDITIONAL_EVIDENCE"",
+  ""urgency"": ""low"",
+  ""missing_information"": [
+    ""pricing_mortality_index"",
+    ""observed_mortality_index""
+  ]
+}"
+F022,hybrid,uncertain,No deterministic threshold was triggered.,REQUEST_ADDITIONAL_EVIDENCE,low,"['observed_mortality_index', 'pricing_mortality_index']",True,[],True,2.027395227999989,450,69,0.0001088999999999,False,"{
+  ""risk_type"": ""uncertain"",
+  ""issue"": ""No deterministic threshold was triggered."",
+  ""recommended_action"": ""REQUEST_ADDITIONAL_EVIDENCE"",
+  ""urgency"": ""low"",
+  ""missing_information"": [
+    ""pricing_mortality_index"",
+    ""observed_mortality_index""
+  ]
+}"
+F023,rule_only,uncertain,No deterministic threshold was triggered.,REQUEST_ADDITIONAL_EVIDENCE,low,['observed_lapse_rate_pct'],True,[],True,0.0,0,0,0.0,,
+F023,model_with_rule_context,uncertain,No deterministic threshold was triggered.,REQUEST_ADDITIONAL_EVIDENCE,low,['observed_lapse_rate_pct'],True,[],True,2.0566120099999807,443,57,0.0001006499999999,False,"{
+  ""risk_type"": ""uncertain"",
+  ""issue"": ""No deterministic threshold was triggered."",
+  ""recommended_action"": ""REQUEST_ADDITIONAL_EVIDENCE"",
+  ""urgency"": ""low"",
+  ""missing_information"": [""observed_lapse_rate_pct""]
+}"
+F023,hybrid,uncertain,No deterministic threshold was triggered.,REQUEST_ADDITIONAL_EVIDENCE,low,['observed_lapse_rate_pct'],True,[],True,2.0566120099999807,443,57,0.0001006499999999,False,"{
+  ""risk_type"": ""uncertain"",
+  ""issue"": ""No deterministic threshold was triggered."",
+  ""recommended_action"": ""REQUEST_ADDITIONAL_EVIDENCE"",
+  ""urgency"": ""low"",
+  ""missing_information"": [""observed_lapse_rate_pct""]
+}"
+F024,rule_only,uncertain,No deterministic threshold was triggered.,REQUEST_ADDITIONAL_EVIDENCE,low,"['pricing_interest_rate_pct', 'expected_investment_yield_pct', 'observed_investment_yield_pct', 'pricing_mortality_index', 'observed_mortality_index', 'pricing_lapse_rate_pct', 'observed_lapse_rate_pct', 'profit_test_npv', 'break_even_return_pct']",True,[],True,0.0,0,0,0.0,,
+F024,model_with_rule_context,uncertain,No quantified experience has been provided.,REQUEST_ADDITIONAL_EVIDENCE,low,"['pricing_interest_rate_pct', 'expected_investment_yield_pct', 'observed_investment_yield_pct', 'pricing_mortality_index', 'observed_mortality_index', 'pricing_lapse_rate_pct', 'observed_lapse_rate_pct', 'profit_test_npv', 'break_even_return_pct']",True,[],True,1.4125160840000035,482,129,0.0001497,False,"{
+  ""risk_type"": ""uncertain"",
+  ""issue"": ""No quantified experience has been provided."",
+  ""recommended_action"": ""REQUEST_ADDITIONAL_EVIDENCE"",
+  ""urgency"": ""low"",
+  ""missing_information"": [
+    ""pricing_interest_rate_pct"",
+    ""expected_investment_yield_pct"",
+    ""observed_investment_yield_pct"",
+    ""pricing_mortality_index"",
+    ""observed_mortality_index"",
+    ""pricing_lapse_rate_pct"",
+    ""observed_lapse_rate_pct"",
+    ""profit_test_npv"",
+    ""break_even_return_pct""
+  ]
+}"
+F024,hybrid,uncertain,No quantified experience has been provided.,REQUEST_ADDITIONAL_EVIDENCE,low,"['break_even_return_pct', 'expected_investment_yield_pct', 'observed_investment_yield_pct', 'observed_lapse_rate_pct', 'observed_mortality_index', 'pricing_interest_rate_pct', 'pricing_lapse_rate_pct', 'pricing_mortality_index', 'profit_test_npv']",True,[],True,1.4125160840000035,482,129,0.0001497,False,"{
+  ""risk_type"": ""uncertain"",
+  ""issue"": ""No quantified experience has been provided."",
+  ""recommended_action"": ""REQUEST_ADDITIONAL_EVIDENCE"",
+  ""urgency"": ""low"",
+  ""missing_information"": [
+    ""pricing_interest_rate_pct"",
+    ""expected_investment_yield_pct"",
+    ""observed_investment_yield_pct"",
+    ""pricing_mortality_index"",
+    ""observed_mortality_index"",
+    ""pricing_lapse_rate_pct"",
+    ""observed_lapse_rate_pct"",
+    ""profit_test_npv"",
+    ""break_even_return_pct""
+  ]
+}"
+F025,rule_only,mortality,Observed mortality is 1.10 times the pricing index.,REVIEW_MORTALITY_ASSUMPTIONS,high,[],True,['R_MORTALITY_HIGH'],True,0.0,0,0,0.0,,
+F025,model_with_rule_context,mortality,Observed mortality is 1.10 times the pricing index.,REVIEW_MORTALITY_ASSUMPTIONS,high,[],True,[],True,3.22165320900001,456,59,0.0001038,False,"{
+  ""risk_type"": ""mortality"",
+  ""issue"": ""Observed mortality is 1.10 times the pricing index."",
+  ""recommended_action"": ""REVIEW_MORTALITY_ASSUMPTIONS"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F025,hybrid,mortality,Observed mortality is 1.10 times the pricing index. Model assessment: Observed mortality is 1.10 times the pricing index.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,['R_MORTALITY_HIGH'],True,3.22165320900001,456,59,0.0001038,False,"{
+  ""risk_type"": ""mortality"",
+  ""issue"": ""Observed mortality is 1.10 times the pricing index."",
+  ""recommended_action"": ""REVIEW_MORTALITY_ASSUMPTIONS"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F026,rule_only,lapse,Observed lapse is 1.50 times the pricing rate.,REVIEW_LAPSE_ASSUMPTIONS,high,[],True,['R_LAPSE_HIGH'],True,0.0,0,0,0.0,,
+F026,model_with_rule_context,lapse,Observed lapse is 1.50 times the pricing rate.,REVIEW_LAPSE_ASSUMPTIONS,high,[],True,[],True,0.9701176259999896,458,58,0.0001035,False,"{
+  ""risk_type"": ""lapse"",
+  ""issue"": ""Observed lapse is 1.50 times the pricing rate."",
+  ""recommended_action"": ""REVIEW_LAPSE_ASSUMPTIONS"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F026,hybrid,lapse,Observed lapse is 1.50 times the pricing rate. Model assessment: Observed lapse is 1.50 times the pricing rate.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,['R_LAPSE_HIGH'],True,0.9701176259999896,458,58,0.0001035,False,"{
+  ""risk_type"": ""lapse"",
+  ""issue"": ""Observed lapse is 1.50 times the pricing rate."",
+  ""recommended_action"": ""REVIEW_LAPSE_ASSUMPTIONS"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F027,rule_only,within_threshold,No deterministic threshold was triggered.,MONITOR,low,[],False,[],True,0.0,0,0,0.0,,
+F027,model_with_rule_context,within_threshold,No deterministic threshold was triggered.,MONITOR,low,[],False,[],True,1.833655207999982,435,45,9.225e-05,False,"{
+  ""risk_type"": ""within_threshold"",
+  ""issue"": ""No deterministic threshold was triggered."",
+  ""recommended_action"": ""MONITOR"",
+  ""urgency"": ""low"",
+  ""missing_information"": []
+}"
+F027,hybrid,within_threshold,No deterministic threshold was triggered.,MONITOR,low,[],False,[],True,1.833655207999982,435,45,9.225e-05,False,"{
+  ""risk_type"": ""within_threshold"",
+  ""issue"": ""No deterministic threshold was triggered."",
+  ""recommended_action"": ""MONITOR"",
+  ""urgency"": ""low"",
+  ""missing_information"": []
+}"
+F028,rule_only,within_threshold,No deterministic threshold was triggered.,MONITOR,low,[],False,[],True,0.0,0,0,0.0,,
+F028,model_with_rule_context,within_threshold,No deterministic threshold was triggered.,MONITOR,low,[],False,[],True,1.6857391140000004,436,45,9.24e-05,False,"{
+  ""risk_type"": ""within_threshold"",
+  ""issue"": ""No deterministic threshold was triggered."",
+  ""recommended_action"": ""MONITOR"",
+  ""urgency"": ""low"",
+  ""missing_information"": []
+}"
+F028,hybrid,within_threshold,No deterministic threshold was triggered.,MONITOR,low,[],False,[],True,1.6857391140000004,436,45,9.24e-05,False,"{
+  ""risk_type"": ""within_threshold"",
+  ""issue"": ""No deterministic threshold was triggered."",
+  ""recommended_action"": ""MONITOR"",
+  ""urgency"": ""low"",
+  ""missing_information"": []
+}"
+F029,rule_only,multiple,Observed yield is below the pricing interest rate. Observed mortality is 1.15 times the pricing index.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,"['R_INTEREST_SPREAD', 'R_MORTALITY_HIGH']",True,0.0,0,0,0.0,,
+F029,model_with_rule_context,uncertain,Investment and mortality experience have both deteriorated.,REQUEST_ADDITIONAL_EVIDENCE,high,"['detailed_mortality_data', 'investment_assumptions', 'lapse_rate_analysis']",True,[],True,1.2437069800000131,471,78,0.00011745,False,"{
+  ""risk_type"": ""uncertain"",
+  ""issue"": ""Investment and mortality experience have both deteriorated."",
+  ""recommended_action"": ""REQUEST_ADDITIONAL_EVIDENCE"",
+  ""urgency"": ""high"",
+  ""missing_information"": [
+    ""detailed_mortality_data"",
+    ""investment_assumptions"",
+    ""lapse_rate_analysis""
+  ]
+}"
+F029,hybrid,multiple,Observed yield is below the pricing interest rate. Observed mortality is 1.15 times the pricing index. Model assessment: Investment and mortality experience have both deteriorated.,ESCALATE_TO_ACTUARIAL_REVIEW,high,"['detailed_mortality_data', 'investment_assumptions', 'lapse_rate_analysis']",True,"['R_INTEREST_SPREAD', 'R_MORTALITY_HIGH']",True,1.2437069800000131,471,78,0.00011745,True,"{
+  ""risk_type"": ""uncertain"",
+  ""issue"": ""Investment and mortality experience have both deteriorated."",
+  ""recommended_action"": ""REQUEST_ADDITIONAL_EVIDENCE"",
+  ""urgency"": ""high"",
+  ""missing_information"": [
+    ""detailed_mortality_data"",
+    ""investment_assumptions"",
+    ""lapse_rate_analysis""
+  ]
+}"
+F030,rule_only,multiple,Observed yield is below the pricing interest rate. Observed mortality is 1.01 times the pricing index. Observed lapse is 1.60 times the pricing rate.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,"['R_INTEREST_SPREAD', 'R_MORTALITY_MEDIUM', 'R_LAPSE_HIGH']",True,0.0,0,0,0.0,,
+F030,model_with_rule_context,multiple,Observed yield is below the pricing interest rate. Observed mortality is 1.01 times the pricing index. Observed lapse is 1.60 times the pricing rate.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,[],True,1.184433676000026,494,81,0.0001227,False,"{
+  ""risk_type"": ""multiple"",
+  ""issue"": ""Observed yield is below the pricing interest rate. Observed mortality is 1.01 times the pricing index. Observed lapse is 1.60 times the pricing rate."",
+  ""recommended_action"": ""ESCALATE_TO_ACTUARIAL_REVIEW"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F030,hybrid,multiple,Observed yield is below the pricing interest rate. Observed mortality is 1.01 times the pricing index. Observed lapse is 1.60 times the pricing rate. Model assessment: Observed yield is below the pricing interest rate. Observed mortality is 1.01 times the pricing index. Observed lapse is 1.60 times the pricing rate.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,"['R_INTEREST_SPREAD', 'R_MORTALITY_MEDIUM', 'R_LAPSE_HIGH']",True,1.184433676000026,494,81,0.0001227,False,"{
+  ""risk_type"": ""multiple"",
+  ""issue"": ""Observed yield is below the pricing interest rate. Observed mortality is 1.01 times the pricing index. Observed lapse is 1.60 times the pricing rate."",
+  ""recommended_action"": ""ESCALATE_TO_ACTUARIAL_REVIEW"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F031,rule_only,multiple,Observed mortality is 1.14 times the pricing index. Observed lapse is 1.55 times the pricing rate.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,"['R_MORTALITY_HIGH', 'R_LAPSE_HIGH']",True,0.0,0,0,0.0,,
+F031,model_with_rule_context,multiple,Observed mortality is 1.14 times the pricing index. Observed lapse is 1.55 times the pricing rate.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,[],True,1.275309918000005,476,71,0.000114,False,"{
+  ""risk_type"": ""multiple"",
+  ""issue"": ""Observed mortality is 1.14 times the pricing index. Observed lapse is 1.55 times the pricing rate."",
+  ""recommended_action"": ""ESCALATE_TO_ACTUARIAL_REVIEW"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F031,hybrid,multiple,Observed mortality is 1.14 times the pricing index. Observed lapse is 1.55 times the pricing rate. Model assessment: Observed mortality is 1.14 times the pricing index. Observed lapse is 1.55 times the pricing rate.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,"['R_MORTALITY_HIGH', 'R_LAPSE_HIGH']",True,1.275309918000005,476,71,0.000114,False,"{
+  ""risk_type"": ""multiple"",
+  ""issue"": ""Observed mortality is 1.14 times the pricing index. Observed lapse is 1.55 times the pricing rate."",
+  ""recommended_action"": ""ESCALATE_TO_ACTUARIAL_REVIEW"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F032,rule_only,multiple,Observed yield is below the pricing interest rate. Observed mortality is 1.11 times the pricing index. Observed lapse is 1.60 times the pricing rate. Profit-test NPV is negative.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,"['R_INTEREST_SPREAD', 'R_MORTALITY_HIGH', 'R_LAPSE_HIGH', 'R_NEGATIVE_NPV']",True,0.0,0,0,0.0,,
+F032,model_with_rule_context,multiple,Observed yield is below the pricing interest rate. Observed mortality is 1.11 times the pricing index. Observed lapse is 1.60 times the pricing rate. Profit-test NPV is negative.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,[],True,1.1527745440000103,507,88,0.00012885,False,"{
+  ""risk_type"": ""multiple"",
+  ""issue"": ""Observed yield is below the pricing interest rate. Observed mortality is 1.11 times the pricing index. Observed lapse is 1.60 times the pricing rate. Profit-test NPV is negative."",
+  ""recommended_action"": ""ESCALATE_TO_ACTUARIAL_REVIEW"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F032,hybrid,multiple,Observed yield is below the pricing interest rate. Observed mortality is 1.11 times the pricing index. Observed lapse is 1.60 times the pricing rate. Profit-test NPV is negative. Model assessment: Observed yield is below the pricing interest rate. Observed mortality is 1.11 times the pricing index. Observed lapse is 1.60 times the pricing rate. Profit-test NPV is negative.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,"['R_INTEREST_SPREAD', 'R_MORTALITY_HIGH', 'R_LAPSE_HIGH', 'R_NEGATIVE_NPV']",True,1.1527745440000103,507,88,0.00012885,False,"{
+  ""risk_type"": ""multiple"",
+  ""issue"": ""Observed yield is below the pricing interest rate. Observed mortality is 1.11 times the pricing index. Observed lapse is 1.60 times the pricing rate. Profit-test NPV is negative."",
+  ""recommended_action"": ""ESCALATE_TO_ACTUARIAL_REVIEW"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F033,rule_only,multiple,Observed mortality is 1.16 times the pricing index. Profit-test NPV is negative.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,"['R_MORTALITY_HIGH', 'R_NEGATIVE_NPV']",True,0.0,0,0,0.0,,
+F033,model_with_rule_context,multiple,Observed mortality is 1.16 times the pricing index. Profit-test NPV is negative.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,[],True,2.2494638590000022,468,65,0.0001092,False,"{
+  ""risk_type"": ""multiple"",
+  ""issue"": ""Observed mortality is 1.16 times the pricing index. Profit-test NPV is negative."",
+  ""recommended_action"": ""ESCALATE_TO_ACTUARIAL_REVIEW"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F033,hybrid,multiple,Observed mortality is 1.16 times the pricing index. Profit-test NPV is negative. Model assessment: Observed mortality is 1.16 times the pricing index. Profit-test NPV is negative.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,"['R_MORTALITY_HIGH', 'R_NEGATIVE_NPV']",True,2.2494638590000022,468,65,0.0001092,False,"{
+  ""risk_type"": ""multiple"",
+  ""issue"": ""Observed mortality is 1.16 times the pricing index. Profit-test NPV is negative."",
+  ""recommended_action"": ""ESCALATE_TO_ACTUARIAL_REVIEW"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F034,rule_only,profitability,Profit-test NPV is negative.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,['R_NEGATIVE_NPV'],True,0.0,0,0,0.0,,
+F034,model_with_rule_context,profitability,Profit-test NPV is negative.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,[],True,1.807984392000037,454,54,0.0001004999999999,False,"{
+  ""risk_type"": ""profitability"",
+  ""issue"": ""Profit-test NPV is negative."",
+  ""recommended_action"": ""ESCALATE_TO_ACTUARIAL_REVIEW"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F034,hybrid,profitability,Profit-test NPV is negative. Model assessment: Profit-test NPV is negative.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,['R_NEGATIVE_NPV'],True,1.807984392000037,454,54,0.0001004999999999,False,"{
+  ""risk_type"": ""profitability"",
+  ""issue"": ""Profit-test NPV is negative."",
+  ""recommended_action"": ""ESCALATE_TO_ACTUARIAL_REVIEW"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F035,rule_only,interest_rate,Observed yield is below the pricing interest rate.,RUN_SENSITIVITY_TEST,high,[],True,['R_INTEREST_SPREAD'],True,0.0,0,0,0.0,,
+F035,model_with_rule_context,interest_rate,Observed yield is below the pricing interest rate.,RUN_SENSITIVITY_TEST,high,[],True,[],True,0.9263019370000052,449,52,9.855e-05,False,"{
+  ""risk_type"": ""interest_rate"",
+  ""issue"": ""Observed yield is below the pricing interest rate."",
+  ""recommended_action"": ""RUN_SENSITIVITY_TEST"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F035,hybrid,interest_rate,Observed yield is below the pricing interest rate. Model assessment: Observed yield is below the pricing interest rate.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,['R_INTEREST_SPREAD'],True,0.9263019370000052,449,52,9.855e-05,False,"{
+  ""risk_type"": ""interest_rate"",
+  ""issue"": ""Observed yield is below the pricing interest rate."",
+  ""recommended_action"": ""RUN_SENSITIVITY_TEST"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F036,rule_only,mortality,Observed mortality is 1.20 times the pricing index.,REVIEW_MORTALITY_ASSUMPTIONS,high,[],True,['R_MORTALITY_HIGH'],True,0.0,0,0,0.0,,
+F036,model_with_rule_context,uncertain,Observed mortality is 1.20 times the pricing index.,REQUEST_ADDITIONAL_EVIDENCE,high,['mortality evidence'],True,[],True,1.0209191719999922,459,60,0.00010485,False,"{
+  ""risk_type"": ""uncertain"",
+  ""issue"": ""Observed mortality is 1.20 times the pricing index."",
+  ""recommended_action"": ""REQUEST_ADDITIONAL_EVIDENCE"",
+  ""urgency"": ""high"",
+  ""missing_information"": [""mortality evidence""]
+}"
+F036,hybrid,mortality,Observed mortality is 1.20 times the pricing index. Model assessment: Observed mortality is 1.20 times the pricing index.,ESCALATE_TO_ACTUARIAL_REVIEW,high,['mortality evidence'],True,['R_MORTALITY_HIGH'],True,1.0209191719999922,459,60,0.00010485,True,"{
+  ""risk_type"": ""uncertain"",
+  ""issue"": ""Observed mortality is 1.20 times the pricing index."",
+  ""recommended_action"": ""REQUEST_ADDITIONAL_EVIDENCE"",
+  ""urgency"": ""high"",
+  ""missing_information"": [""mortality evidence""]
+}"
+F037,rule_only,lapse,Observed lapse is 1.70 times the pricing rate.,REVIEW_LAPSE_ASSUMPTIONS,high,[],True,['R_LAPSE_HIGH'],True,0.0,0,0,0.0,,
+F037,model_with_rule_context,uncertain,Insufficient evidence regarding the observed lapse rate compared to the pricing rate.,REQUEST_ADDITIONAL_EVIDENCE,high,"['justification_for_pricing_lapse_rate', 'historical_lapse_data', 'market_comparisons']",True,[],True,1.2489711339999872,463,86,0.0001210499999999,False,"{
+  ""risk_type"": ""uncertain"",
+  ""issue"": ""Insufficient evidence regarding the observed lapse rate compared to the pricing rate."",
+  ""recommended_action"": ""REQUEST_ADDITIONAL_EVIDENCE"",
+  ""urgency"": ""high"",
+  ""missing_information"": [
+    ""justification_for_pricing_lapse_rate"",
+    ""historical_lapse_data"",
+    ""market_comparisons""
+  ]
+}"
+F037,hybrid,lapse,Observed lapse is 1.70 times the pricing rate. Model assessment: Insufficient evidence regarding the observed lapse rate compared to the pricing rate.,ESCALATE_TO_ACTUARIAL_REVIEW,high,"['historical_lapse_data', 'justification_for_pricing_lapse_rate', 'market_comparisons']",True,['R_LAPSE_HIGH'],True,1.2489711339999872,463,86,0.0001210499999999,True,"{
+  ""risk_type"": ""uncertain"",
+  ""issue"": ""Insufficient evidence regarding the observed lapse rate compared to the pricing rate."",
+  ""recommended_action"": ""REQUEST_ADDITIONAL_EVIDENCE"",
+  ""urgency"": ""high"",
+  ""missing_information"": [
+    ""justification_for_pricing_lapse_rate"",
+    ""historical_lapse_data"",
+    ""market_comparisons""
+  ]
+}"
+F038,rule_only,multiple,Observed yield is below the pricing interest rate. Observed mortality is 1.16 times the pricing index. Observed lapse is 1.60 times the pricing rate. Profit-test NPV is negative.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,"['R_INTEREST_SPREAD', 'R_MORTALITY_HIGH', 'R_LAPSE_HIGH', 'R_NEGATIVE_NPV']",True,0.0,0,0,0.0,,
+F038,model_with_rule_context,multiple,Observed yield is below the pricing interest rate. Observed mortality is 1.16 times the pricing index. Observed lapse is 1.60 times the pricing rate. Profit-test NPV is negative.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,[],True,2.5477021849999915,508,88,0.000129,False,"{
+  ""risk_type"": ""multiple"",
+  ""issue"": ""Observed yield is below the pricing interest rate. Observed mortality is 1.16 times the pricing index. Observed lapse is 1.60 times the pricing rate. Profit-test NPV is negative."",
+  ""recommended_action"": ""ESCALATE_TO_ACTUARIAL_REVIEW"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F038,hybrid,multiple,Observed yield is below the pricing interest rate. Observed mortality is 1.16 times the pricing index. Observed lapse is 1.60 times the pricing rate. Profit-test NPV is negative. Model assessment: Observed yield is below the pricing interest rate. Observed mortality is 1.16 times the pricing index. Observed lapse is 1.60 times the pricing rate. Profit-test NPV is negative.,ESCALATE_TO_ACTUARIAL_REVIEW,high,[],True,"['R_INTEREST_SPREAD', 'R_MORTALITY_HIGH', 'R_LAPSE_HIGH', 'R_NEGATIVE_NPV']",True,2.5477021849999915,508,88,0.000129,False,"{
+  ""risk_type"": ""multiple"",
+  ""issue"": ""Observed yield is below the pricing interest rate. Observed mortality is 1.16 times the pricing index. Observed lapse is 1.60 times the pricing rate. Profit-test NPV is negative."",
+  ""recommended_action"": ""ESCALATE_TO_ACTUARIAL_REVIEW"",
+  ""urgency"": ""high"",
+  ""missing_information"": []
+}"
+F039,rule_only,within_threshold,No deterministic threshold was triggered.,MONITOR,low,[],False,[],True,0.0,0,0,0.0,,
+F039,model_with_rule_context,uncertain,Actuarial note suggests escalating despite data not supporting it.,REQUEST_ADDITIONAL_EVIDENCE,medium,['justification_for_escalation'],True,[],True,1.2602254169999585,441,63,0.0001039499999999,False,"{
+  ""risk_type"": ""uncertain"",
+  ""issue"": ""Actuarial note suggests escalating despite data not supporting it."",
+  ""recommended_action"": ""REQUEST_ADDITIONAL_EVIDENCE"",
+  ""urgency"": ""medium"",
+  ""missing_information"": [""justification_for_escalation""]
+}"
+F039,hybrid,uncertain,Actuarial note suggests escalating despite data not supporting it.,REQUEST_ADDITIONAL_EVIDENCE,medium,['justification_for_escalation'],True,[],True,1.2602254169999585,441,63,0.0001039499999999,True,"{
+  ""risk_type"": ""uncertain"",
+  ""issue"": ""Actuarial note suggests escalating despite data not supporting it."",
+  ""recommended_action"": ""REQUEST_ADDITIONAL_EVIDENCE"",
+  ""urgency"": ""medium"",
+  ""missing_information"": [""justification_for_escalation""]
+}"
+F040,rule_only,interest_rate,Observed yield is below the pricing interest rate.,RUN_SENSITIVITY_TEST,high,['observed_mortality_index'],True,['R_INTEREST_SPREAD'],True,0.0,0,0,0.0,,
+F040,model_with_rule_context,interest_rate,Observed yield is below the pricing interest rate.,RUN_SENSITIVITY_TEST,high,['observed_mortality_index'],True,[],True,1.852074215000016,458,59,0.0001041,False,"{
+  ""risk_type"": ""interest_rate"",
+  ""issue"": ""Observed yield is below the pricing interest rate."",
+  ""recommended_action"": ""RUN_SENSITIVITY_TEST"",
+  ""urgency"": ""high"",
+  ""missing_information"": [""observed_mortality_index""]
+}"
+F040,hybrid,interest_rate,Observed yield is below the pricing interest rate. Model assessment: Observed yield is below the pricing interest rate.,ESCALATE_TO_ACTUARIAL_REVIEW,high,['observed_mortality_index'],True,['R_INTEREST_SPREAD'],True,1.852074215000016,458,59,0.0001041,False,"{
+  ""risk_type"": ""interest_rate"",
+  ""issue"": ""Observed yield is below the pricing interest rate."",
+  ""recommended_action"": ""RUN_SENSITIVITY_TEST"",
+  ""urgency"": ""high"",
+  ""missing_information"": [""observed_mortality_index""]
+}"
